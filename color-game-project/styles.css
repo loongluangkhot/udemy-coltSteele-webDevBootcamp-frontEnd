@@ -21,7 +21,7 @@ h1 {
   text-align: center;
 }
 
-.rgb-value {
+.rgb-target {
   font-size: 1.5em;
 }
 
@@ -57,9 +57,18 @@ a {
   padding: 7px 15px;
 }
 
-a.selected {
+a.selected, a:hover {
   color: white;
   background: #729B79;
+}
+
+div.menu {
+  text-align: center;
+}
+
+.text-display {
+  display: inline-block;
+  padding: 7px;
 }
 
 div.grid {
