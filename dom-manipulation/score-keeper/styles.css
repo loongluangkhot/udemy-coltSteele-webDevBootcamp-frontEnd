@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Kirang+Haerang|Nunito');
+
+body {
+  font-family: Nunito, sans-serif;
+  padding-top: 20px;
+  background: #CDE6F5;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+h1 {
+  font-family: "Kirang Haerang", sans-serif;
+}
+
+div.input-field {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.won {
+  color: green;
+}
