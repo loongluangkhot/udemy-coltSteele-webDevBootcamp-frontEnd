@@ -79,8 +79,7 @@ function addEventHandlers() {
   // event handler for each cell
   for (var i = 0; i < cells.length; i++) {
     cells[i].addEventListener("click", function() {
-      console.log("clicked!")
-      if (compareColours(this.style.backgroundColor)) {
+      if (this.style.backgroundColor === rgbValue_target) {
         // win visuals
         textDisplay.textContent = "Correct!"
         newColours_button.textContent = "NEW GAME?"
@@ -97,16 +96,10 @@ function addEventHandlers() {
   }
 }
 
-function compareColours(colourStr) {
-  console.log(colourStr)
-  console.log(rgbValue_target)
-  return colourStr === rgbValue_target
-}
-
 function reset_game() {
   textDisplay.textContent = ""
   newColours_button.textContent = "NEW COLOURS"
   h1.style.backgroundColor = "#729B79";
 }
-start_game()
 addEventHandlers()
+start_game()
