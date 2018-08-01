@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Nunito, sans-serif;
+  background: #ff6e7f;
+  /* background: -webkit-linear-gradient(0.3turn, #bfe9ff, #ff6e7f); */
+  background: linear-gradient(to right, #bfe9ff, #ff6e7f);
+}
+
+.main {
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  margin: 50px auto;
+}
+
+.row {
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.top-label {
+  /* background-color: #29339B; */
+  background-color: #507DBC;
+
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.main span {
+  display: inline-block;
+  padding: 8px 20px;
+}
+
+.todo:nth-of-type(even) {
+  background-color: rgba(211, 211, 211, 0.3);
+}
+
+input {
+  padding: 12px 20px;
+  /* border: #29339B solid 4px; */
+  border: #507DBC solid 4px;
+  border-top: 0;
+  /* display: none; */
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.top-label > button {
+  float: right;
+  height: 100%;
+  width: 15%;
+  font-size: 1.1em;
+  color: white;
+}
+
+.todo-list button {
+  float: left;
+  height: 100%;
+  width: 15%;
+  font-size: 1.1em;
+  color: white;
+  background-color: #FF3A20;
+  /* display: none; */
+}
+
+.struck-off {
+  text-decoration: line-through;
+  color: rgba(119, 136, 153, 0.5);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="main">
+    <div class="top-panel">
+      <div class="row top-label">
+        <span id="label">TO-DO LIST</span>
+        <button><i class="fas fa-plus-circle"></i></button>
+      </div>
+      <input class="row" type="text" name="newTodo" placeholder="Add New Todo">
+    </div>
+    <div class="todo-list">
+      <div class="row todo">
+        <button><i class="far fa-trash-alt"></i></button>
+        <span>Sniff my butt</span>
+      </div>
+      <div class="row todo">
+        <button><i class="far fa-trash-alt"></i></button>
+        <span class="struck-off">Lick my hoo-man's face</span>
+      </div>
+      <div class="row todo">
+        <button><i class="far fa-trash-alt"></i></button>
+        <span>Take hoo-man for a walk</span>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
