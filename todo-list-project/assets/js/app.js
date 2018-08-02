@@ -7,9 +7,9 @@ $(".add-btn").on("click", function(e) {
 })
 
 // when todo is clicked on, strike-off; remove line-thru when struck-off item is clicked
-$(".todo-list").on("click", "span", function(e) {
+$(".todo-list").on("click", ".todo", function(e) {
   e.stopPropagation()
-  $(this).toggleClass("struck-off")
+  $(this).children("span").toggleClass("struck-off")
 })
 
 // delete button slides from left when todo item is hovered over
