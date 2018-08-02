@@ -6,33 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Todo List</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="text/javascript" src="assets/js/lib/jquery-3.3.1.js"></script>
 </head>
 <body>
   <div class="main">
-    <div class="top-panel">
-      <div class="row top-label">
-        <span id="label">TO-DO LIST</span>
-        <button><i class="fas fa-plus-circle"></i></button>
-      </div>
-      <input class="row" type="text" name="newTodo" placeholder="Add New Todo">
+    
+    <div class="row top-label">
+      <span id="label">TO-DO LIST</span>
+      <button class="add-btn"><i class="fas fa-plus-circle"></i></button>
     </div>
-    <div class="todo-list">
-      <div class="row todo">
-        <button><i class="far fa-trash-alt"></i></button>
+
+    <input class="row" type="text" name="newTodo" placeholder="Add New Todo">
+    
+    <ul class="todo-list">
+      <li class="row todo">
+        <button class="del-btn"><i class="far fa-trash-alt"></i></button>
         <span>Sniff my butt</span>
-      </div>
-      <div class="row todo">
-        <button><i class="far fa-trash-alt"></i></button>
-        <span class="struck-off">Lick my hoo-man's face</span>
-      </div>
-      <div class="row todo">
-        <button><i class="far fa-trash-alt"></i></button>
+      </li>
+      <li class="row todo">
+        <button class="del-btn"><i class="far fa-trash-alt"></i></button>
+        <span>Lick my hoo-man's face</span>
+      </li>
+      <li class="row todo">
+        <button class="del-btn"><i class="far fa-trash-alt"></i></button>
         <span>Take hoo-man for a walk</span>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
-  <script type="text/javascript" src="jquery-3.3.1.js"></script>
-  <script type="text/javascript" src="app.js"></script>
+  
+  <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

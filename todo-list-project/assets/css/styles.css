@@ -16,7 +16,8 @@ body {
   width: 90%;
   max-width: 400px;
   background-color: white;
-  margin: 50px auto;
+  margin: 100px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .row {
@@ -28,7 +29,6 @@ body {
 .top-label {
   /* background-color: #29339B; */
   background-color: #507DBC;
-
   color: white;
   font-weight: bold;
   font-size: 1.1em;
@@ -39,16 +39,39 @@ body {
   padding: 8px 20px;
 }
 
-.todo:nth-of-type(even) {
-  background-color: rgba(211, 211, 211, 0.3);
+.todo {
+  list-style-type: none;
+}
+
+.todo:nth-of-type(2n) {
+  background-color: rgb(240, 240, 240);
 }
 
 input {
-  padding: 12px 20px;
+  outline: none;
+  background-color: rgb(240, 240, 240);
+  color: #507DBC;
+  font-size: 16px;
+  font-family: Nunito, sans-serif;
+  padding: 0 18px;
+  border: rgba(0,0,0,0) solid 2px;
+  /* border: none; */
   /* border: #29339B solid 4px; */
-  border: #507DBC solid 4px;
-  border-top: 0;
+  /* border: #507DBC solid 4px;
+  border-top: 0; */
   /* display: none; */
+}
+
+input:focus {
+  background: white;
+  border: #507DBC solid 2px;
+  /* border-top: 0; */
+}
+
+input::placeholder {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+  color: lightgray;
 }
 
 button {
@@ -68,11 +91,19 @@ button {
 .todo-list button {
   float: left;
   height: 100%;
-  width: 15%;
+  /* width: 15%; */
+  width: 0;
   font-size: 1.1em;
   color: white;
   background-color: #FF3A20;
+  opacity: 0;
   /* display: none; */
+}
+
+.todo:hover button {
+  width: 15%;
+  opacity: 1;
+  transition: all 0.1s linear;
 }
 
 .struck-off {
